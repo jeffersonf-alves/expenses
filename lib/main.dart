@@ -6,6 +6,21 @@ void main(List<String> args) {
     runApp(ExpensesApp());
 }
 
+// StatelessWidget
+
+// O StatelessWidget no Flutter é um tipo de widget que não armazena estado interno e não muda ao 
+// longo do tempo. Ele é ideal para criar interfaces que não precisam ser 
+// atualizadas dinamicamente após a construção inicial.
+
+
+// MaterialApp 
+
+// O MaterialApp no Flutter é um widget de alto nível que configura e gerencia a estrutura básica 
+// de um aplicativo que segue as diretrizes de Material Design. Ele fornece funcionalidades 
+// essenciais para a navegação e o tema do app.
+
+
+
 class ExpensesApp extends StatelessWidget {
     @override
     Widget build(BuildContext context) {
