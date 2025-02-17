@@ -20,6 +20,12 @@ void main(List<String> args) {
 // essenciais para a navegação e o tema do app.
 
 
+// Scaffold
+
+// No Flutter, o Scaffold é um widget fundamental que fornece uma estrutura básica para o layout 
+// de um aplicativo. Ele serve como um "esqueleto" para construir a interface da aplicação, 
+// fornecendo elementos essenciais, como AppBar, Body, FloatingActionButton, BottomNavigationBar, SnackBar
+
 
 class ExpensesApp extends StatelessWidget {
     @override
@@ -107,7 +113,7 @@ class MyHomePage extends StatelessWidget {
                                   )  
                                 ),
                               Text(
-                                DateFormat('dMMMy').format(tr.date),
+                                DateFormat('d MMM y').format(tr.date),
                                 style: TextStyle(
                                   color: Colors.grey[600]
                                 ),
