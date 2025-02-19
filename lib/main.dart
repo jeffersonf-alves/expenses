@@ -131,9 +131,29 @@ class MyHomePage extends StatelessWidget {
                   padding: EdgeInsets.all(10),
                   child: Column(
                   children: [
-                    TextField(),
-                    TextField(),
-
+                    TextField(
+                      decoration: InputDecoration(
+                        labelText: 'Título'
+                      ),
+                    ),
+                    TextField(
+                      decoration: InputDecoration(
+                        labelText: 'Valor (R\$)'
+                       ),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        FloatingActionButton(
+                            child: Text('Nova transação'),
+                            textColor: Colors.purple,
+                            onPressed: () {
+                              print(title);
+                              print(value);
+                            },
+                        )
+                      ],
+                    )
                   ],
                 ),
                 )
