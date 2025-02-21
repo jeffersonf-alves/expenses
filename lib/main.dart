@@ -39,6 +39,10 @@ class ExpensesApp extends StatelessWidget {
 
 class MyHomePage extends StatelessWidget {
 
+    final titleController = TextEditingController();
+    final valueController = TextEditingController();
+
+
     final _transactions = [
       Transaction(
           id: 't1', 
@@ -148,8 +152,8 @@ class MyHomePage extends StatelessWidget {
                             child: Text('Nova transação'),
                             textColor: Colors.purple,
                             onPressed: () {
-                              print(title);
-                              print(value);
+                              print(titleController.text);
+                              print(valueController.text);
                             },
                         )
                       ],
